@@ -1,13 +1,18 @@
 import { Card } from "./ui/card";
-import { GraduationCap, Code2, Trophy, Heart } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import { GraduationCap, Code2, Trophy, Heart, MapPin } from "lucide-react";
+import profileImg from "@/assets/tushar-photo.jpg";
 
 const About = () => {
   const highlights = [
     {
       icon: GraduationCap,
       title: "Education",
-      description: "3rd Year ICT Student at Mawlana Bhashani Science and Technology University",
+      description: "3rd Year 2nd Semester ICT Student at Mawlana Bhashani Science and Technology University",
+    },
+    {
+      icon: MapPin,
+      title: "Location",
+      description: "Kishoreganj, Dhaka, Bangladesh",
     },
     {
       icon: Code2,
@@ -53,8 +58,13 @@ const About = () => {
           <div className="space-y-6 animate-fade-in-left">
             <p className="text-lg text-foreground leading-relaxed">
               I'm <span className="font-semibold text-primary">Nahidur Rahman Tushar</span>, a passionate ICT student at 
-              Mawlana Bhashani Science and Technology University. Currently in my 3rd year, I love exploring new 
+              Mawlana Bhashani Science and Technology University. Currently in my 3rd year 2nd semester, I love exploring new 
               technologies, developing web applications, and solving algorithmic problems on competitive programming platforms.
+            </p>
+            
+            <p className="text-lg text-foreground leading-relaxed">
+              <span className="font-semibold text-primary">From Kishoreganj, Dhaka,</span> I'm proud to represent my hometown 
+              while pursuing my passion for technology and innovation.
             </p>
             
             <p className="text-lg text-foreground leading-relaxed">
@@ -78,7 +88,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mt-16 max-w-6xl mx-auto">
           {highlights.map((item, index) => (
             <Card
               key={index}
